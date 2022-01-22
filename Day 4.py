@@ -1,4 +1,4 @@
-import random
+# import random
 
 # random_int = random.randint(0,1)
 #
@@ -19,17 +19,17 @@ import random
 
 # ---
 # treasure map game
-
-row1 = ["⬜️","⬜️","⬜️"]
-row2 = ["⬜️","⬜️","⬜️"]
-row3 = ["⬜️","⬜️","⬜️"]
-map = [row1, row2, row3]
-print(f"{row1}\n{row2}\n{row3}")
-
-location = input('Type two number to select your location, first number for column, second number for row\n')
-map[int(location[1]) - 1][int(location[0]) - 1] = 'X'
-
-print(f"{row1}\n{row2}\n{row3}")
+#
+# row1 = ["⬜️","⬜️","⬜️"]
+# row2 = ["⬜️","⬜️","⬜️"]
+# row3 = ["⬜️","⬜️","⬜️"]
+# map = [row1, row2, row3]
+# print(f"{row1}\n{row2}\n{row3}")
+#
+# location = input('Type two number to select your location, first number for column, second number for row\n')
+# map[int(location[1]) - 1][int(location[0]) - 1] = 'X'
+#
+# print(f"{row1}\n{row2}\n{row3}")
 
 # ---
 # rock paper scissors
