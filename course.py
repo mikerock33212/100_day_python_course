@@ -89,155 +89,160 @@
 
 # print("Welcome to Python Pizza Deliveries!")
 # size = input("What size pizza do you want? S, M, or L ")
-# add_pepperoni = input("Do you want pepperoni? Y or N ")
-# extra_cheese = input("Do you want extra cheese? Y or N ")
+# # add_pepperoni = input("Do you want pepperoni? Y or N ")
+# # extra_cheese = input("Do you want extra cheese? Y or N ")
+# #
+# # bill = 0
+# #
+# # if size == 'S' or size == 's':
+# #     bill = 15
+# #     if add_pepperoni == 'Y' or add_pepperoni == 'y':
+# #         bill += 2
+# #     if extra_cheese == 'Y' or extra_cheese == 'y':
+# #         bill += 1
+# # elif size == 'M' or size == 'm':
+# #     bill = 20
+# #     if add_pepperoni == 'Y' or add_pepperoni == 'y':
+# #         bill += 3
+# #     if extra_cheese == 'Y' or extra_cheese == 'y':
+# #         bill += 1
+# # elif size == 'L' or size == 'l':
+# #     bill = 25
+# #     if add_pepperoni == 'Y' or add_pepperoni == 'y':
+# #         bill += 3
+# #     if extra_cheese == 'Y' or extra_cheese == 'y':
+# #         bill += 1
+# #
+# # print(f'Your final bill is: ${bill}')
 #
-# bill = 0
+# # ---
+# # love calculator
+# # print("Welcome to the Love Calculator!")
+# # name1 = input("What is your name? \n").lower()
+# # name2 = input("What is their name? \n").lower()
+# #
+# # combined = name1 + name2
+# #
+# # t = combined.count('t')
+# # r = combined.count('r')
+# # u = combined.count('u')
+# # e = combined.count('e')
+# #
+# # l = combined.count('l')
+# # o = combined.count('o')
+# # v = combined.count('v')
+# # e1 = combined.count('e')
+# #
+# # true = t + r + u + e
+# # love = l + o + v + e1
+# #
+# # results = str(true) + str(love)
+# # if int(results) < 10 or int(results) > 90:
+# #     print(f'Your love score is {results}, you go together like coke and mentos.')
+# # elif int(results) >= 40 and int(results) <= 50:
+# #     print(f'Your love score is {results}, you are alright together.')
+# # else:
+# #     print(f'Your score is {results}')
 #
-# if size == 'S' or size == 's':
-#     bill = 15
-#     if add_pepperoni == 'Y' or add_pepperoni == 'y':
-#         bill += 2
-#     if extra_cheese == 'Y' or extra_cheese == 'y':
-#         bill += 1
-# elif size == 'M' or size == 'm':
-#     bill = 20
-#     if add_pepperoni == 'Y' or add_pepperoni == 'y':
-#         bill += 3
-#     if extra_cheese == 'Y' or extra_cheese == 'y':
-#         bill += 1
-# elif size == 'L' or size == 'l':
-#     bill = 25
-#     if add_pepperoni == 'Y' or add_pepperoni == 'y':
-#         bill += 3
-#     if extra_cheese == 'Y' or extra_cheese == 'y':
-#         bill += 1
+# # ---
+# # treasure hunt game
 #
-# print(f'Your final bill is: ${bill}')
+# print('''
+# *******************************************************************************
+#           |                   |                  |                     |
+#  _________|________________.=""_;=.______________|_____________________|_______
+# |                   |  ,-"_,=""     `"=.|                  |
+# |___________________|__"=._o`"-._        `"=.______________|___________________
+#           |                `"=._o`"=._      _`"=._                     |
+#  _________|_____________________:=._o "=._."_.-="'"=.__________________|_______
+# |                   |    __.--" , ; `"=._o." ,-"""-._ ".   |
+# |___________________|_._"  ,. .` ` `` ,  `"-._"-._   ". '__|___________________
+#           |           |o`"=._` , "` `; .". ,  "-._"-._; ;              |
+#  _________|___________| ;`-.o`"=._; ." ` '`."\` . "-._ /_______________|_______
+# |                   | |o;    `"-.o`"=._``  '` " ,__.--o;   |
+# |___________________|_| ;     (#) `-.o `"=.`_.--"_o.-; ;___|___________________
+# ____/______/______/___|o;._    "      `".o|o_.--"    ;o;____/______/______/____
+# /______/______/______/_"=._o--._        ; | ;        ; ;/______/______/______/_
+# ____/______/______/______/__"=._o--._   ;o|o;     _._;o;____/______/______/____
+# /______/______/______/______/____"=._o._; | ;_.--"o.--"_/______/______/______/_
+# ____/______/______/______/______/_____"=.o|o_.--""___/______/______/______/____
+# /______/______/______/______/______/______/______/______/______/______/_____ /
+# *******************************************************************************
+# ''')
+# print("Welcome to Treasure Island.")
+# print("Your mission is to find the treasure.")
+#
+# # Write your code below this line 👇
+# choice1 = input('Which way you want to go? Left or right? Type l for left, r for right\n').lower()
+#
+# if choice1 == 'r':
+#     print('Fall into a hole. Game over.')
+#     print("""
+#         ________________________________
+#       /                                "-_
+#      /      .  |  .                       \
+#     /      : \ | / :                       \
+#    /        '-___-'                         \
+#   /_________________________________________ \
+#        _______| |________________________--""-L
+#       /       F J                              \
+#      /       F   J                              L
+#     /      :'     ':                            F
+#    /        '-___-'                            /
+#   /_________________________________________--"
+#
+#     """)
+# elif choice1 == 'l':
+#     choice2 = input('Now you need to either swim or wait for a boat to continue onward. Type swim or wait\n').lower()
+#     if choice2 == 'swim' or choice2 == 's':
+#         print('You have been attacked by a trout, Game over. ')
+#     elif choice2 == 'wait' or choice2 == 'w':
+#         choice3 = input('Now you have 3 doors to enter, red, blue and yellow, '
+#                         'which door do you want to enter? Type r, b or y \n').lower()
+#         if choice3 == 'yellow' or choice3 == 'y':
+#             print('You win!')
+#         else:
+#             if choice3 == 'blue' or choice3 == 'b':
+#                 print('Eaten by beasts. Game over.')
+#                 print("""
+#                              (    )
+#                   ((((()))
+#                   |o\ /o)|
+#                   ( (  _')
+#                    (._.  /\__
+#                   ,\___,/ '  ')
+#     '.,_,,       (  .- .   .    )
+#      \   \\     ( '        )(    )
+#       \   \\    \.  _.__ ____( .  |
+#        \  /\\   .(   .'  /\  '.  )
+#         \(  \\.-' ( /    \/    \)
+#          '  ()) _'.-|/\/\/\/\/\|
+#              '\\ .( |\/\/\/\/\/|
+#                '((  \    /\    /
+#                ((((  '.__\/__.')
+#                 ((,) /   ((()   )
+#                  "..-,  (()("   /
+#             pils  _//.   ((() ."
+#           _____ //,/" ___ ((( ', ___
+#                            ((  )
+#                             / /
+#                           _/,/'
+#                         /,/,"
+#                 """)
+#             elif choice3 == 'red' or choice3 == 'r':
+#                 print('Burned by fire. Game over.')
+#                 print("""
+#                 (  .      )
+#            )           (              )
+#                  .  '   .   '  .  '  .
+#         (    , )       (.   )  (   ',    )
+#          .' ) ( . )    ,  ( ,     )   ( .
+#       ). , ( .   (  ) ( , ')  .' (  ,    )
+#      (_,) . ), ) _) _,')  (, ) '. )  ,. (' )
+#  jgs^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+#                 """)
+# import random
+# print(random.randint(0,0))
 
-# ---
-# love calculator
-# print("Welcome to the Love Calculator!")
-# name1 = input("What is your name? \n").lower()
-# name2 = input("What is their name? \n").lower()
-#
-# combined = name1 + name2
-#
-# t = combined.count('t')
-# r = combined.count('r')
-# u = combined.count('u')
-# e = combined.count('e')
-#
-# l = combined.count('l')
-# o = combined.count('o')
-# v = combined.count('v')
-# e1 = combined.count('e')
-#
-# true = t + r + u + e
-# love = l + o + v + e1
-#
-# results = str(true) + str(love)
-# if int(results) < 10 or int(results) > 90:
-#     print(f'Your love score is {results}, you go together like coke and mentos.')
-# elif int(results) >= 40 and int(results) <= 50:
-#     print(f'Your love score is {results}, you are alright together.')
-# else:
-#     print(f'Your score is {results}')
-
-# ---
-# treasure hunt game
-
-print('''
-*******************************************************************************
-          |                   |                  |                     |
- _________|________________.=""_;=.______________|_____________________|_______
-|                   |  ,-"_,=""     `"=.|                  |
-|___________________|__"=._o`"-._        `"=.______________|___________________
-          |                `"=._o`"=._      _`"=._                     |
- _________|_____________________:=._o "=._."_.-="'"=.__________________|_______
-|                   |    __.--" , ; `"=._o." ,-"""-._ ".   |
-|___________________|_._"  ,. .` ` `` ,  `"-._"-._   ". '__|___________________
-          |           |o`"=._` , "` `; .". ,  "-._"-._; ;              |
- _________|___________| ;`-.o`"=._; ." ` '`."\` . "-._ /_______________|_______
-|                   | |o;    `"-.o`"=._``  '` " ,__.--o;   |
-|___________________|_| ;     (#) `-.o `"=.`_.--"_o.-; ;___|___________________
-____/______/______/___|o;._    "      `".o|o_.--"    ;o;____/______/______/____
-/______/______/______/_"=._o--._        ; | ;        ; ;/______/______/______/_
-____/______/______/______/__"=._o--._   ;o|o;     _._;o;____/______/______/____
-/______/______/______/______/____"=._o._; | ;_.--"o.--"_/______/______/______/_
-____/______/______/______/______/_____"=.o|o_.--""___/______/______/______/____
-/______/______/______/______/______/______/______/______/______/______/_____ /
-*******************************************************************************
-''')
-print("Welcome to Treasure Island.")
-print("Your mission is to find the treasure.")
-
-# Write your code below this line 👇
-choice1 = input('Which way you want to go? Left or right? Type l for left, r for right\n').lower()
-
-if choice1 == 'r':
-    print('Fall into a hole. Game over.')
-    print("""
-        ________________________________         
-      /                                "-_          
-     /      .  |  .                       \          
-    /      : \ | / :                       \         
-   /        '-___-'                         \      
-  /_________________________________________ \      
-       _______| |________________________--""-L 
-      /       F J                              \ 
-     /       F   J                              L
-    /      :'     ':                            F
-   /        '-___-'                            / 
-  /_________________________________________--"  
- 
-    """)
-elif choice1 == 'l':
-    choice2 = input('Now you need to either swim or wait for a boat to continue onward. Type swim or wait\n').lower()
-    if choice2 == 'swim' or choice2 == 's':
-        print('You have been attacked by a trout, Game over. ')
-    elif choice2 == 'wait' or choice2 == 'w':
-        choice3 = input('Now you have 3 doors to enter, red, blue and yellow, '
-                        'which door do you want to enter? Type r, b or y \n').lower()
-        if choice3 == 'yellow' or choice3 == 'y':
-            print('You win!')
-        else:
-            if choice3 == 'blue' or choice3 == 'b':
-                print('Eaten by beasts. Game over.')
-                print("""
-                             (    )
-                  ((((()))
-                  |o\ /o)|
-                  ( (  _')
-                   (._.  /\__
-                  ,\___,/ '  ')
-    '.,_,,       (  .- .   .    )
-     \   \\     ( '        )(    )
-      \   \\    \.  _.__ ____( .  |
-       \  /\\   .(   .'  /\  '.  )
-        \(  \\.-' ( /    \/    \)
-         '  ()) _'.-|/\/\/\/\/\|
-             '\\ .( |\/\/\/\/\/|
-               '((  \    /\    /
-               ((((  '.__\/__.')
-                ((,) /   ((()   )
-                 "..-,  (()("   /
-            pils  _//.   ((() ."
-          _____ //,/" ___ ((( ', ___
-                           ((  )
-                            / /
-                          _/,/'
-                        /,/,"
-                """)
-            elif choice3 == 'red' or choice3 == 'r':
-                print('Burned by fire. Game over.')
-                print("""
-                (  .      )
-           )           (              )
-                 .  '   .   '  .  '  .
-        (    , )       (.   )  (   ',    )
-         .' ) ( . )    ,  ( ,     )   ( .
-      ). , ( .   (  ) ( , ')  .' (  ,    )
-     (_,) . ), ) _) _,')  (, ) '. )  ,. (' )
- jgs^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-                """)
+answer = int(input('enter number'))
+print(isinstance(answer, int))
