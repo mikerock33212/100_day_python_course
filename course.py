@@ -244,5 +244,7 @@
 # import random
 # print(random.randint(0,0))
 
-answer = int(input('enter number'))
-print(isinstance(answer, int))
+# answer = int(input('enter number'))
+# print(isinstance(answer, int))
+a = [1,2,3,4]
+print(lambda a: a * 2 for i in a )
