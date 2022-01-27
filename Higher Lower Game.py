@@ -1,4 +1,6 @@
 import random
+import sys
+
 from art import logo_higher_lower, higher_lower_vs
 
 game_data = [
@@ -324,11 +326,6 @@ def compare(party):
             return False
 
 
-PARTYA = generate_index(game_data)
-PARTYB = generate_index(game_data)
-PLAYER_SCORE = 0
-
-
 def play_game():
     global PARTYA, PARTYB, PLAYER_SCORE
     GAME_END = False
@@ -351,9 +348,20 @@ def play_game():
             GAME_END = True
             play_again = input('Would you like to play again? ')
             if play_again == 'y' or play_again == 'yes':
+                PARTYA = generate_index(game_data)
+                PARTYB = generate_index(game_data)
+                PLAYER_SCORE = 0
                 play_game()
             else:
                 pass
 
 
-play_game()
+PARTYA = generate_index(game_data)
+PARTYB = generate_index(game_data)
+PLAYER_SCORE = 0
+
+user_play = input('Do you want to start the game? ')
+if user_play == 'y' or user_play == 'yes':
+    play_game()
+else:
+    sys.exit()

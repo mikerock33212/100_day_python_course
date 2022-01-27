@@ -246,5 +246,18 @@
 
 # answer = int(input('enter number'))
 # print(isinstance(answer, int))
-a = [1,2,3,4]
-print(lambda a: a * 2 for i in a )
+resources1 = {
+    "water": 300,
+    "milk": 200,
+    "coffee": 100,
+}
+resources2 = {
+    "water": 100,
+    "milk": 50,
+    "coffee": 50,
+}
+for i in resources1:
+    if i in resources2.keys():
+        resources1[i] -= resources2[i]
+        print('Found')
+print(resources1)
