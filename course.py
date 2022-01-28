@@ -256,8 +256,12 @@ resources2 = {
     "milk": 50,
     "coffee": 50,
 }
-for i in resources1:
-    if i in resources2.keys():
-        resources1[i] -= resources2[i]
-        print('Found')
-print(resources1)
+# for i in resources1:
+#     if i in resources2.keys():
+#         resources1[i] -= resources2[i]
+#         print('Found')
+# print(resources1)
+money = 0
+for i in range(6):
+    money += 200
+print(money)
