@@ -25,7 +25,7 @@ label.config()
 input_1 = tkinter.Entry(width=10)
 input_1.place(x=130, y=50)
 # button
- 
+
 
 def button_clicked():
     new_input = input_1.get()
