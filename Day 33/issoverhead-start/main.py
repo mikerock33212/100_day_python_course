@@ -75,5 +75,6 @@ MY_LONG = 113.94490240560009 # Your longitude
 while True:
     if is_night() and is_iss_overhead():
         send_email('zeze_1988zhao@hotmail.com')
+        print('Email Sent, Please Heads Up!!!!!!')
     print('Job done for this time, waiting for next one.')
     time.sleep(60)
