@@ -3,7 +3,7 @@ from bs4 import BeautifulSoup
 import lxml
 import re
 
-Date = '2019-04-06'
+Date = '2022-05-10'
 
 website_content = requests.get(f'https://www.billboard.com/charts/hot-100/{Date}/').text
 
@@ -46,4 +46,3 @@ counter = 1
 for i in range(100):
     final_playlist[counter] = [[title_of_song[i]], [all_singers[i]]]
     counter += 1
-print(final_playlist)
