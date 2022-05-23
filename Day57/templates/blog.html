@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Blog</title>
+</head>
+<body>
+<!--    {% for blog_posts in posts: %}-->
+<!--    <h1>{{ blog_posts['title'] }}</h1>-->
+<!--    <h2>{{ blog_posts['subtitle'] }}</h2>-->
+<!--    {% endfor %}-->
+    {% for blog_posts in posts: %}
+    <h1> {% if blog_posts['id'] ==  2: %} </h1>
+    <h1>{{ blog_posts['title'] }}</h1>
+    <h1>{{ blog_posts['subtitle'] }}</h1>
+
+    {% endif %}
+    {% endfor %}
+</body>
+</html>
