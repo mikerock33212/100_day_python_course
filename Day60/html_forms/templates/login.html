@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>User Details</title>
+</head>
+<body>
+    {% if sent: %}
+  <h1>
+    Name: {{ user }}, Password: {{ password }}
+  </h1>
+    {% else: %}
+    <h1>Hey you did not send via post, this is a get request</h1>
+    {% endif %}
+</body>
+</html>
